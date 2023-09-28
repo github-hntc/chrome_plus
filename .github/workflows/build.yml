@@ -44,3 +44,8 @@ jobs:
       with:
         name: ${{ matrix.name }}
         path: build/release
+      run: ./configure
+   - name: make
+   run: make
+   - name: make test
+   run: make test
